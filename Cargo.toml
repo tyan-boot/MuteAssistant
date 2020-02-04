@@ -1,0 +1,15 @@
+[package]
+name = "mute"
+version = "0.2.0"
+authors = ["tyanboot <tyanboot@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+com = "0.1.0"
+winapi = { version = "0.3", features = ["mmdeviceapi", "combaseapi", "endpointvolume", "wincon", "shellapi", "impl-default", "windef", "minwindef"] }
+gtk = "^0.8"
+gdk = "^0.12"
+gio = "^0.8"
+glib = "^0.9"
+anyhow = "1.0"
+lazy_static = "1.4.0"
