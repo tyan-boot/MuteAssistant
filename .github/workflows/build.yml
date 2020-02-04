@@ -18,6 +18,10 @@ jobs:
         with:
           vcpkgArguments: "gtk:x64-windows"
           vcpkgTriplet: "x64-windows"
+      - name: mklink
+        run:
+          mklink ${{ github.workspace }}/vcpkg/installed/x64-windows/lib/gtk-3.lib ${{ github.workspace }}/vcpkg/installed/x64-windows/lib/gtk-3.0.lib
+          mklink ${{ github.workspace }}/vcpkg/installed/x64-windows/lib/gdk-3.lib ${{ github.workspace }}/vcpkg/installed/x64-windows/lib/gdk-3.0.lib
       - name: set env
         run: echo "::set-env name=GTK_LIB_DIR::${{ github.workspace }}/vcpkg/installed/x64-windows/lib"
       - uses: actions/checkout@v2
