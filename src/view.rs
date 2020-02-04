@@ -34,10 +34,7 @@ lazy_static! {
         map.insert(0x13, "PAUSE key");
         map.insert(0x14, "CAPS LOCK key");
         map.insert(0x15, "IME Kana mode");
-        map.insert(
-            0x15,
-            "IME Hanguel mode (maintained for compatibility; use VK_HANGUL)",
-        );
+        map.insert(0x15,"IME Hanguel mode");
         map.insert(0x15, "IME Hangul mode");
         map.insert(0x16, "IME On");
         map.insert(0x17, "IME Junja mode");
